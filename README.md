@@ -1,7 +1,40 @@
-# Personal Bookshelf #
+# Personal Bookshelf
+
 ![black](https://img.shields.io/badge/code%20style-black-000000.svg)
-## Description ##
+
+## Description
+
 Represents a personal bookshelf allowing the multi-user usage.
 
-## Status ##
+## Install
+
+To install this project on your machine for development, clone the repository and go to the
+projects directory. Optionally, you can create a virtual environment to keep things clean.
+After that run:
+
+```bash
+$ python -m pip install -e .
+```
+
+## Test
+
+To run the tests, you need to install additional dependencies (you may do it inside of a
+virtual environment) and run the tests:
+
+```bash
+$ python -m pip install '.[test]'
+$ pytest
+```
+
+## Status
+
 Currently in development.
+
+## Contributing
+
+If you are interested in contributing, please check out the [CONTRIBUTING.md](CONTRIBUTING.md).
+There you find information about the commit and branch naming conventions as well as about the
+general Gitflow.
+
+
+[tox]: https://tox.readthedocs.io/en/latest/
