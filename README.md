@@ -1,5 +1,6 @@
 # Personal Bookshelf
 
+[![Build Status](https://dev.azure.com/fdahlitz/personal-bookshelf/_apis/build/status/DahlitzFlorian.personal-bookshelf?branchName=master)](https://dev.azure.com/fdahlitz/personal-bookshelf/_build/latest?definitionId=3&branchName=master)
 ![black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 ## Description
