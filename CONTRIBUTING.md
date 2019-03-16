@@ -26,6 +26,10 @@ The following branch conventions exist:
 | feature |	Development branch, contains a single feature to show it to the product owner. When ready, a pull request (PR) is created to be reviewed by another developer. | feat/feature-name | develop |
 | bugfix | Contains the resolution of a single bug. When ready, a pull request (PR) is created to be reviewed by another developer. | fix/nasty-bug	| master |
 
+### Commit Conventions
+
+As [semantic-release][semantic-release] is used the commits should follow [this convention][semantic-commits]. 
+
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
@@ -116,3 +120,5 @@ available at [http://contributor-covenant.org/version/1/4][version]
 [wily]: https://github.com/tonybaloney/wily
 [gitflow]: https://nvie.com/posts/a-successful-git-branching-model/
 [kebab-case]: http://wiki.c2.com/?KebabCase
+[semantic-release]: https://github.com/semantic-release/semantic-release
+[semantic-commits]: https://github.com/semantic-release/semantic-release#commit-message-format
