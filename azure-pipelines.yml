@@ -74,3 +74,21 @@ jobs:
       testResultsFiles: 'reports/personal-bookshelf.xml'
       testRunTitle: '$(Agent.OS) - $(Build.BuildNumber)[$(Agent.JobName)] - Python $(python.version)'
     condition: succeededOrFailed()
+
+- job: 'Semantic_Release'
+  dependsOn:
+  - 'Test_Linux'
+  - 'Test_Windows'
+  condition: succeeded()
+
+  steps:
+    - script: >
+        npx -p semantic-release
+        -p semantic-release-ado
+        -p @semantic-release/commit-analyzer
+        -p @semantic-release/release-notes-generator
+        -p @semantic-release/changelog
+        -p @semantic-release/github
+        semantic-release
+      env: { GH_TOKEN: $(GitHubToken) }
+      displayName: 'Semantic Release'
